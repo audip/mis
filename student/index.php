@@ -1,3 +1,17 @@
+<?php
+session_start();
+//echo $_SESSION['username'].$_SESSION['usertype'];die();
+
+if(isset($_SESSION['username']) && isset($_SESSION['usertype']) && ($_SESSION['usertype']=='student'))
+{
+}
+else
+{
+	header('location:../index.html');
+}
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -30,11 +44,9 @@
 
 <style>
 	body {
-  //min-height: 2000px;
   padding-top: 70px;
   background-color: #4ac2aa;
   background-size: cover;
-  //font-family: caslonpro;
 }
 </style>
 
@@ -50,7 +62,7 @@
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" style="color:#4ac2aa"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a></li>
+                    <li class="active"><a href="../index.html" style="color:#4ac2aa"><i class="fa fa-home fa-lg"></i>&nbsp;Home</a></li>
 
                     <li><a href="#about" style="color:#4ac2aa"><i class="fa fa-pencil-square-o fa-lg"></i>&nbsp;Give Feedback</a></li>
 
@@ -76,7 +88,7 @@
                      -->                </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
+                    <li><a href="../logout.php">Logout</a></li>
 
                 </ul>
             </div><!--/.nav-collapse -->

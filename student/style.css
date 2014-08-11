@@ -7,24 +7,24 @@
 .group-1
 {
 	padding: 20px 0px 0px 0px;
-	width: 60%;
+	width: 80%;
 	margin: 0px auto;
 }
 .group-type
 {
-	width:60%;
+	width:80%;
 	text-align: center;
 	margin: 20px 20% 0px 20%;
 }
 
 .jumbotron
 {
-	width: 50%;
+	width: 70%;
 	margin: 0px auto;
 }
 .submit-btn
 {
-	margin: 20px auto;
+	margin: 20px auto 0px auto;
 	text-align: center;
-	width: 60%;
+	width: 30%;
 }

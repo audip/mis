@@ -1,5 +1,6 @@
 <?php
-		echo 'Hey There!';
+		session_start();
+		ob_start();
 		include('connect.php');
 		if($_POST)
 		{
@@ -18,6 +19,8 @@
 					if($username == $row['username'] && $password ==$row['password'] && $usertype== $row['usertype'])
 					{
 						echo 'Login Successful. Redirecting you!';
+						$_SESSION['username'] = $username;
+						$_SESSION['usertype'] = $usertype;
 						if($usertype == "student")
 						{
 							header("location:student/");
@@ -39,4 +42,5 @@
 			}
 		}
 
+ob_flush();
 ?>
