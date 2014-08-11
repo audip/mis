@@ -1,0 +1,30 @@
+/*
+@font-face {
+  font-family: 'caslonpro';
+  src:  url('AdobeCaslonPro.ttf') format('truetype');  
+  }
+*/
+.group-1
+{
+	padding: 20px 0px 0px 0px;
+	width: 60%;
+	margin: 0px auto;
+}
+.group-type
+{
+	width:60%;
+	text-align: center;
+	margin: 20px 20% 0px 20%;
+}
+
+.jumbotron
+{
+	width: 50%;
+	margin: 0px auto;
+}
+.submit-btn
+{
+	margin: 20px auto;
+	text-align: center;
+	width: 60%;
+}
