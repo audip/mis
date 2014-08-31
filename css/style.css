@@ -1,9 +1,14 @@
-/*
 @font-face {
-  font-family: 'caslonpro';
-  src:  url('AdobeCaslonPro.ttf') format('truetype');  
-  }
-*/
+    font-family: 'Museo';
+    src: url('../css/Museo300-Regular-webfont.eot');
+    src: url('../css/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/Museo300-Regular-webfont.woff') format('woff'),
+         url('../css/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('../css/Museo300-Regular-webfont.svg#Museo300Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .group-1
 {
 	padding: 20px 0px 0px 0px;
@@ -27,4 +32,8 @@
 	margin: 20px auto;
 	text-align: center;
 	width: 60%;
+}
+
+html, body{
+	font-family: 'Museo';
 }
